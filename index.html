@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ryan Ian - About & Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: white;
+    }
+
+    /* Green container */
+.green-section {
+  background-color: #2ecc71;  /* nice green */
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  animation: shadowPulse 4s infinite alternate;
+  color: white; /* base text color */
+  /* We'll animate the text color separately */
+  animation-name: shadowPulse, textColorPulse;
+  animation-duration: 4s, 4s;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, alternate;
+}
+
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 4px 8px rgb(255, 29, 0);
+  }
+  100% {
+    box-shadow: 0 4px 8px rgb(0, 255, 100);
+  }
+}
+
+@keyframes textColorPulse {
+  0% {
+    color: #ff0707; /* red */
+  }
+  100% {
+    color: #00ff00; /* green */
+  }
+}
+
+    h1 {
+      margin-top: 0;
+      color: #ff0707; /* white text for contrast */
+      font-size: 2em;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      background-color: aqua;
+    }
+
+    ul {
+      list-style-type: none; /* removes bullets */
+      padding: 0;
+      margin: 0 0 25px 0;
+      color: #0213ff;
+    }
+
+    ul li {
+      margin: 6px 0;
+    }
+
+    footer {
+      font-size: 0.9em;
+      color: #00eeff;
+      margin-top: 20px;
+        border-top: 1px solid #fffb01;
+        padding-top: 10px;
+        text-align: center;
+        font-style: italic;
+        color: #f700ff; /* light green footer text */;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="green-section">
+    <img src="pic.jpg" alt="Ryan Ian's Avatar" style="border-radius: 50%; width: 100px; height: 100px; margin-bottom: 20px;" />
+    <h2>About Me</h2>
+    <p>Hi, I'm Ryan Ian. On 25th November 2024, I met a guy named Clinton Ochieng who introduced me to coding. We started learning and have completed many projects together.</p>
+
+    <h2>My Projects</h2>
+    <ul>
+      <li>Personal Webpage</li>
+      <li>Cat Photo Project</li>
+      <li>Cafe Menu</li>
+      <li>Color Maker</li>
+      <li>Personal Portfolio</li>
+      <li>KE258</li>
+      <li>Seventh Project (in progress)</li>
+    </ul>
+
+    <footer>© 2024 Ryan Ian. All rights reserved.</footer>
+  </div>
+
+</body>
+</html>
+<!-- This is a simple HTML page with a green container that includes an "About Me" section and a list of projects. -->
+<!-- The page is styled with CSS to have a clean and modern look, with a focus on readability and aesthetics. -->
